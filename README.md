@@ -66,7 +66,7 @@ $$
 ## How to Use
 
 ### Try the App
-[Click here to use the app](https://your-app-name.streamlit.app)
+[Click here to use the app](https://crispr-comparison-fbvvn6l8s6vads2mvj5oag.streamlit.app)
 
 #### Features
 - Upload Excel files with CRISPR data.
