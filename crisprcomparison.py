@@ -7,7 +7,7 @@ import streamlit as st
 
 #######################configure streamlit#########################
 def main():
-    st.title('Cas9 Comparison')
+    st.title('CRISPR Comparison')
 
     #file upload
     st.sidebar.header('Upload Data File')
@@ -104,7 +104,7 @@ def import_data_clean(filename):
     df = pd.read_excel(filename, skiprows=header_row_index,header=0)
     return df
 
-#identify relevant columns (gRNA, MMs, variants ('Cas9'))
+#identify relevant columns (gRNA, MMs, variants ('cas'))
 def prepare_dataframe(df):
     df.columns = df.columns.astype(str)
     gRNA_col = [col for col in df.columns if 'grna' in col.lower()]
@@ -229,8 +229,8 @@ def plot_fid_eff_variants(fid_eff_variants_df):
     #labels for each variant
     for i, row in fid_eff_variants_df.iterrows():
         ax.text(
-            row['fidelity variant (%)'] + 1, 
-            row['efficiency variant (%)'] - 6, 
+            row['fidelity variant (%)'], 
+            row['efficiency variant (%)'], 
             row['variant'], 
             horizontalalignment='right', 
             size='medium', 
@@ -264,8 +264,3 @@ def plot_fid_eff_variants(fid_eff_variants_df):
 
 if __name__ == "__main__":
     main()
-
-
-
-
-
