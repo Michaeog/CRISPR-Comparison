@@ -76,7 +76,7 @@ $$
 #### Example Data Frame
 To get started quickly, you can download an example Excel file that fits the required structure for this tool:
 
-[Download Example Data Frame](./data/example_data.xlsx)
+[Download Example Data Frame](https://raw.githubusercontent.com/Michaeog/CRISPR-Comparison/main/example_data.xlsx)
 
 This file contains sample data with the correct columns (`gRNA`, `MMs`, and `variants`), and you can upload it directly to the app to test the tool's functionality.
 
